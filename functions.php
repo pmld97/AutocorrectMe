@@ -17,18 +17,15 @@ add_action('wp_enqueue_scripts', array('filterhook_fix_gramma', 'includes'));
 class filterhook_fix_gramma{
         function fix_spelling($content)
         {
-            $search = array('its', 'thats', '');
+            $search = array('its', 'thats', 'ive', 'im', 'wouldnt', 'werent');
 
             $replace = array(
-                "<p class='corrected'>" . "it's" . "</p>",
-                "that's",
-                
-
-                
-                
-                
-                
-                
+                "<a class='corrected'>" . "it's" . "</a>",
+                "<a class='corrected'>" . "that's" . "</a>",
+                "<a class='corrected'>" . "I've" . "</a>",
+                "<a class='corrected'>" . "I'm" . "</a>",
+                "<a class='corrected'>" . "wouldn't" . "</a>",
+                "<a class='corrected'>" . "weren't" . "</a>",
             );
 
            return str_replace($search, $replace, $content);

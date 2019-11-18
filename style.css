@@ -1,8 +1,10 @@
 .corrected{
-color: red;
+border-bottom: 1px solid red;
 }
-p.corrected{
-    margin: 0;
-    text-decoration: none;
-    padding: 0 0 0 0;
+a.corrected{
+    box-shadow: none !important;
+}
+
+a.corrected:hover{
+    color: red;
 }
