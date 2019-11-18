@@ -1,0 +1,8 @@
+.corrected{
+color: red;
+}
+p.corrected{
+    margin: 0;
+    text-decoration: none;
+    padding: 0 0 0 0;
+}
