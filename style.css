@@ -4,7 +4,3 @@ border-bottom: 1px solid red;
 a.corrected{
     box-shadow: none !important;
 }
-
-a.corrected:hover{
-    color: red;
-}
